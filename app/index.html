@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHunt — Real Black Friday Deals 2026</title>
+<meta name="description" content="DealHunt finds real, checked Black Friday 2026 deals from Amazon, Best Buy, Target, Walmart and more — every price verified on 27 Nov 2026.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>DealHunt <span class="tag">— Black Friday 2026</span></h1>
+    <p class="sub">Real deals, checked by hand. Every price below was read at its store or in a deals roundup that names the store on <span id="checked-on">27 Nov 2026</span> — no invented prices, no placeholders.</p>
+    <div class="stats">
+      <div class="stat"><b id="stat-deals">–</b><span>verified deals</span></div>
+      <div class="stat"><b id="stat-avg">–</b><span>average discount</span></div>
+      <div class="stat"><b id="stat-best">–</b><span>deepest cut</span></div>
+      <div class="stat"><b id="stat-saved">–</b><span>total savings if you bought one of each</span></div>
+    </div>
+  </div>
+</header>
+<div class="controls">
+  <div class="wrap">
+    <input id="search" type="search" placeholder="Search deals, stores, categories…" aria-label="Search deals">
+    <select id="store" aria-label="Filter by store">
+      <option value="All">All stores</option>
+    </select>
+    <select id="discount" aria-label="Minimum discount">
+      <option value="0">Any discount</option>
+      <option value="20">20% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+    <select id="sort" aria-label="Sort deals">
+      <option value="discount">Sort: biggest discount</option>
+      <option value="savings">Sort: biggest saving ($)</option>
+      <option value="priceAsc">Sort: lowest price</option>
+      <option value="priceDesc">Sort: highest price</option>
+      <option value="name">Sort: name A–Z</option>
+    </select>
+    <div id="categories" role="group" aria-label="Filter by category"></div>
+  </div>
+</div>
+<main id="app" class="wrap"></main>
+<footer>
+  <p>DealHunt is a static site: it makes no network requests of its own. “View at store” opens the store’s own search for that exact product.</p>
+  <p>Prices checked 27 Nov 2026 from retailer pages and the deal roundups cited on each card (Benzinga via TradingView, Tom’s Guide, BeeBulletin, Yahoo Shopping, Miami Herald, Koupon.ai, Letters from Miss Jade). Prices can change — always confirm at the store before you buy.</p>
+  <p>Black Friday 2026 is Fri 27 Nov; Cyber Monday is Mon 30 Nov. Most sales run through 29–30 Nov.</p>
+</footer>
+</body>
+</html>
